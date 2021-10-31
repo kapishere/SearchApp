@@ -1,16 +1,16 @@
 const search = document.querySelector(".search");
-const li = document.querySelectorAll("li");
+const list = document.querySelectorAll("li");
 
-const searchEngine = (e) => {
+const searchHandler = (e) => {
   const text = e.target.value.toLowerCase();
 
-  li.forEach((el) => {
-    if (el.textContent.toLowerCase().indexOf(text) !== -1) {
-      el.style.display = "block";
+  list.forEach((element) => {
+    if (element.textContent.toLowerCase().indexOf(text) !== -1) {
+      element.style.display = "block";
     } else {
-      el.style.display = "none";
+      element.style.display = "none";
     }
   });
 };
 
-search.addEventListener("keyup", searchEngine);
+search.addEventListener("keyup", searchHandler);

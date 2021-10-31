@@ -9,14 +9,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* font-family: 'Dancing Script', cursive; */
-  font-family: "Montserrat", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: rgb(233, 233, 233);
 }
-.wrapper {
+.page {
   width: 800px;
   background-color: #fff;
   box-shadow: 0 0 10px black;
+}
+h1 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 70px;
+  font-family: "Cairo", sans-serif;
+  text-align: center;
 }
 .header {
   display: flex;
@@ -26,8 +32,8 @@ body {
   position: relative;
   height: 360px;
   padding: 20px 40px;
-  font-family: "Dancing Script", cursive;
-  background-image: url("https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg");
+  font-family: "Cairo", sans-serif;
+  background-image: url("http://umatysa.pl/wp-content/uploads/2019/03/00-1_700_400.jpg");
   background-position: center;
   background-size: cover;
   z-index: 0;
@@ -41,11 +47,7 @@ body {
   background-color: rgba(0, 0, 0, 0.35);
   z-index: -1;
 }
-h1 {
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 50px;
-}
+
 .search {
   padding: 10px 20px;
   margin-bottom: 40px;
@@ -54,7 +56,7 @@ h1 {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.85);
 }
-.drink-list {
+.list {
   padding: 20px 40px;
 }
 h2 {
